@@ -1,0 +1,56 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* descendent selector */
+.navbar img{
+    height: 60px;
+    width: 60px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+.menu-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex: 1;
+}
+/* attribute selector */
+input[title="Type to search"]{
+    /* border: border-width border-type border-color; */
+    border: 1px solid orangered;
+    padding: 10px;
+    /* border-radius: top-left top-right bottom-right bottom-left; */
+    border-radius: 8px 0px 0px 8px;
+    background-color: transparent;
+    color: whitesmoke !important;
+}
+/* child selector */
+.searchbar>button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 0px 8px 8px 0px;
+}
+.searchbar{
+    display: flex;
+}
+.main{
+    background-image: url("../assets/background.avif");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* pseudo element */
+.searchbar input::placeholder{
+    color: whitesmoke;
+}
