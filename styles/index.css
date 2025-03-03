@@ -49,8 +49,88 @@ input[title="Type to search"]{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 10px 30px;
 }
 /* pseudo element */
 .searchbar input::placeholder{
     color: whitesmoke;
+}
+.body-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+/* :first-child pseudo class -> select p tag i.e. first child of content class */
+.content p:first-child{
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+}
+.content p:first-child span{
+    color: orangered;
+}
+.content p:nth-child(2){
+    color: whitesmoke;
+    font-style: italic;
+    /* margin: top right bottom left; */
+    margin: 5px 0px 20px 0px;
+}
+/* child selector */
+.content>button{
+    background-color: orangered;
+    border: none;
+    color: bisque;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+.content{
+    max-width: 300px;
+}
+.login-card{
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.628);
+    width: 280px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.login-card p{
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    color: orangered;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+/* attribute selector with grouping*/
+.login-card input[type="email"], .login-card input[type="password"]{
+    background-color: transparent;
+    width: 240px;
+    margin: 10px 0px;
+    padding: 8px 0px;
+    color: white;
+    border: none;
+    border-bottom: 2px solid red;
+    transition: all 1s ease-in-out;
+}
+/* pseudo element ::placeholder */
+.login-card input::placeholder{
+    color: whitesmoke;
+}
+.login-card input:focus-visible{
+    outline: none;
+}
+.login-card input:focus{
+    border-bottom: 2px solid whitesmoke;
+}
+.login-card button{
+    background-color: orangered;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
 }
