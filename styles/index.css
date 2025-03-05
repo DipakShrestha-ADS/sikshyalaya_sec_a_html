@@ -134,3 +134,37 @@ input[title="Type to search"]{
     margin-top: 20px;
     width: 100%;
 }
+.login-card .sign-up{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+.login-card .sign-up p{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.login-card .sign-up span{
+    color: orangered;
+}
+.other-login{
+    margin-top: 15px;
+    width: 100%;
+}
+.other-login p{
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.logos{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logos i{
+    color: whitesmoke;
+}
